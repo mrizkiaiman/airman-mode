@@ -1,6 +1,6 @@
 # AI Learning Records
 
-This directory stores durable records of the repository owner's AI-related learning, capabilities, judgments, workflows, and achievements.
+This directory stores durable records of the repository owner's AI-related learning, capabilities, judgments, workflows, and achievements. Repository-only agent skills live in `learning-records/skills/`; they support repository or personal workflows and are separate from learning records.
 
 ## Record index
 
@@ -12,7 +12,11 @@ Use this table for a quick overview. Open the linked record for the full context
 | [AI-0002](./0002-ai-tool-preferences.md)            | AI tool preferences and experience | 2026-09-08 | Active | Current tool preferences, usage history, constraints, and trade-offs across AI tools.                    |
 | [AI-0003](./0003-semantic-codebase-retrieval.md)    | Semantic codebase retrieval        | 2026-09-08 | Active | Semantic retrieval increases confidence in repository investigation beyond ordinary string matching.     |
 
-Keep the table synchronized with the files in this directory. Add a row for every new record, preserve rows for replaced records, and update a row when its status changes.
+Keep the table synchronized with record files directly under this directory. Add a row for every new record, preserve rows for replaced records, and update a row when its status changes. Do not add nested repository-only skills to this table.
+
+## Repository-only skills
+
+The [`skills/`](./skills/) directory contains skills used by this repository or personal workflows. These packages are separate from the record files above and are not included in the public skill indexes. Each package keeps its instructions in `<skill-name>/SKILL.md`.
 
 ## AI inventory
 
@@ -57,7 +61,7 @@ Do not record a general software skill merely because AI helped acquire it. For 
 
 ## File naming
 
-Use sequential filenames:
+Use sequential filenames for record files directly under this directory:
 
 ```text
 0001-short-dash-case-title.md

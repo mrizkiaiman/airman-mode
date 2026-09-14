@@ -22,15 +22,6 @@
       "name": "productivity",
       "source": "./",
       "skills": ["./skills/grill-me", "./skills/research", "./skills/teach"]
-    },
-    {
-      "name": "project-specific",
-      "source": "./",
-      "skills": [
-        "./skills/reflect-tickets",
-        "./skills/oliaolio-tickets",
-        "./skills/record"
-      ]
     }
   ]
 }

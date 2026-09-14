@@ -1,22 +1,22 @@
 # Airman Stack
 
-A collection of agent skills for coding, planning, research, and project work. Each skill is a separate `SKILL.md` package that the `skills` CLI can install.
+A collection of public agent skills for coding, planning, research, and project work. Each public skill is a separate `SKILL.md` package that the `skills` CLI can install. Repository-only workflows live under `learning-records/skills/` and are not included in public skill indexes.
 
 ## Install
 
-List the skills in the stack:
+List the public skills in the stack:
 
 ```bash
 npx skills add mrizkiaiman/airman-stack --list
 ```
 
-Install one skill:
+Install one public skill:
 
 ```bash
 npx skills add mrizkiaiman/airman-stack --skill research
 ```
 
-Install several skills:
+Install several public skills:
 
 ```bash
 npx skills add mrizkiaiman/airman-stack \
@@ -25,13 +25,13 @@ npx skills add mrizkiaiman/airman-stack \
   --skill teach
 ```
 
-Install every skill globally:
+Install every public skill globally:
 
 ```bash
 npx skills add mrizkiaiman/airman-stack --skill '*' --global
 ```
 
-The `--skill` flag takes skill names, not group names. `Development`, `Productivity`, and `Project-specific` organize the list for browsing.
+The `--skill` flag takes skill names, not group names. `Development` and `Productivity` organize the public list for browsing. Repository-only workflows are not included in the public list.
 
 ## Skills
 
@@ -60,13 +60,13 @@ Skills for research, learning, and planning.
 - `research`: Research a topic and save the findings in the repository.
 - `teach`: Learn a skill or concept through guided explanations.
 
-### Project-specific
+### Repository-only workflows
 
-Skills that connect to project or personal workflows.
+These skills support this repository or personal workflows. They live under `learning-records/skills/` and are not published through the public skill indexes.
 
+- `record`: Draft and save confirmed AI-related learning records and update the current AI context.
 - `reflect-tickets`: List and plan Reflect tickets for review.
 - `oliaolio-tickets`: List active Oliaolio tickets and propose execution plans.
-- `record`: Draft and save confirmed AI-related learning records and update the current AI context.
 
 ## Repository layout
 
@@ -75,17 +75,20 @@ Skills that connect to project or personal workflows.
 ├── .kiro/
 │   └── steering/                    # Repository-local agent rules
 ├── skills/
-│   └── <skill-name>/SKILL.md       # Individual skill packages
-├── learning-records/                # Personal AI-related progress records
+│   └── <skill-name>/SKILL.md       # Public installable skill packages
+├── learning-records/
+│   ├── skills/
+│   │   └── <skill-name>/SKILL.md   # Repository-only skill packages
+│   └── <record>.md                 # Personal AI learning records
 ├── AI-CONTEXT.md                    # Derived current AI context
 ├── .claude-plugin/
-│   └── marketplace.json             # Interactive marketplace groups
-├── skills.sh.json                   # skills.sh grouping metadata
-├── package.json                     # Local CLI shortcuts
+│   └── marketplace.json             # Public marketplace groups
+├── skills.sh.json                   # Public skills.sh grouping metadata
+├── package.json                     # Local public-skill CLI shortcuts
 └── LICENSE
 ```
 
-Skills live at `skills/<skill-name>/SKILL.md` so the CLI can find them directly. The two grouping files organize the same skills for browsing and installation. `learning-records/` and `AI-CONTEXT.md` contain the repository owner's personal AI context and progress history.
+Public skills live at `skills/<skill-name>/SKILL.md`, where the CLI can find them directly. Repository-only workflows live at `learning-records/skills/<skill-name>/SKILL.md` and stay out of public marketplace and skills.sh metadata. The two grouping files organize only the public skills. `learning-records/` and `AI-CONTEXT.md` contain the repository owner's personal AI context and progress history.
 
 ## Upstream references
 
