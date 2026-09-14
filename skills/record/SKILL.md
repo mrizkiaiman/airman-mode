@@ -105,7 +105,7 @@ After explicit confirmation:
 
 1. Re-read the current filenames and files if the conversation may have changed them. Determine the next number from the highest existing filename.
 2. Create `learning-records/NNNN-short-dash-case-title.md` using the confirmed English draft.
-3. Add a row to the **Record index** table in `learning-records/README.md` with the linked ID, confirmation date, status, and a concise faithful summary.
+3. For every newly created record, always add a row to the **Record index** table in `learning-records/README.md` with the linked ID, confirmation date, status, and a concise faithful summary. Do not add a row for drafts, no-op duplicates, or inputs that do not pass the confirmation boundary.
 4. Update the **Concepts and mechanisms** or **Tools used** inventory table when the record establishes a new item or changes an existing relationship. Keep rows for replaced records and update status when needed.
 5. Update `AI-CONTEXT.md` as a derived current-state summary:
    - include only active current knowledge and preferences;
