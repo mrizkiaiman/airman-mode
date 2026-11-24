@@ -1,0 +1,5 @@
+interface:
+  display_name: "New App"
+  short_description: "Take an app from idea to spec and tickets"
+policy:
+  allow_implicit_invocation: false

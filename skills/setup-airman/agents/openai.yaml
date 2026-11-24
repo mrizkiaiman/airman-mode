@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup Airman"
+  short_description: "Configure a repo for Airman Mode"
+policy:
+  allow_implicit_invocation: false

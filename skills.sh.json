@@ -2,27 +2,48 @@
   "notGrouped": "bottom",
   "groupings": [
     {
+      "title": "Commands",
+      "description": "Workflows you start by name. Each one chains focused skills in a fixed order.",
+      "skills": [
+        "fix-bug",
+        "new-app",
+        "new-feature"
+      ]
+    },
+    {
       "title": "Development",
       "description": "Development workflows, engineering standards, and implementation tools.",
       "skills": [
         "code-review",
-        "grill-with-docs",
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling",
         "grilling",
         "handoff",
         "implement",
         "improve-codebase-architecture",
+        "investigate",
         "no-use-effect",
+        "prototype",
+        "retro",
+        "setup-airman",
         "shadcn",
+        "tdd",
         "to-spec",
         "to-tickets",
         "ui-ux-pro-max",
-        "unslop"
+        "unslop",
+        "wayfinder"
       ]
     },
     {
       "title": "Productivity",
       "description": "Research, learning, and planning workflows.",
-      "skills": ["grill-me", "research", "teach"]
+      "skills": [
+        "grill-me",
+        "research",
+        "teach"
+      ]
     }
   ]
 }

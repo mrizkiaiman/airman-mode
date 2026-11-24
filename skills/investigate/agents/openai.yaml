@@ -1,0 +1,3 @@
+interface:
+  display_name: "Investigate"
+  short_description: "Answer a read-only question about the code"

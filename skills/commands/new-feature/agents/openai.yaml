@@ -1,0 +1,5 @@
+interface:
+  display_name: "New Feature"
+  short_description: "Build a small new feature or plan a large one"
+policy:
+  allow_implicit_invocation: false

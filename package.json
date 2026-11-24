@@ -1,8 +1,8 @@
 {
-  "name": "airman-stack",
+  "name": "airman-mode",
   "version": "0.1.0",
   "private": true,
-  "description": "A provider-neutral collection of public AI agent skills.",
+  "description": "Opinionated, tool-neutral agent workflows for the whole software lifecycle, built on Agent Skills.",
   "scripts": {
     "skills:list": "npx skills add . --list",
     "skills:install": "npx skills add .",

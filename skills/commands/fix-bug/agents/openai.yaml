@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fix Bug"
+  short_description: "Diagnose, fix, and prove a bug fix"
+policy:
+  allow_implicit_invocation: false

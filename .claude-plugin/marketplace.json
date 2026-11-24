@@ -1,27 +1,48 @@
 {
   "plugins": [
     {
+      "name": "commands",
+      "source": "./",
+      "skills": [
+        "./skills/commands/fix-bug",
+        "./skills/commands/new-app",
+        "./skills/commands/new-feature"
+      ]
+    },
+    {
       "name": "development",
       "source": "./",
       "skills": [
         "./skills/code-review",
-        "./skills/grill-with-docs",
+        "./skills/codebase-design",
+        "./skills/diagnosing-bugs",
+        "./skills/domain-modeling",
         "./skills/grilling",
         "./skills/handoff",
         "./skills/implement",
         "./skills/improve-codebase-architecture",
+        "./skills/investigate",
         "./skills/no-use-effect",
+        "./skills/prototype",
+        "./skills/retro",
+        "./skills/setup-airman",
         "./skills/shadcn",
+        "./skills/tdd",
         "./skills/to-spec",
         "./skills/to-tickets",
         "./skills/ui-ux-pro-max",
-        "./skills/unslop"
+        "./skills/unslop",
+        "./skills/wayfinder"
       ]
     },
     {
       "name": "productivity",
       "source": "./",
-      "skills": ["./skills/grill-me", "./skills/research", "./skills/teach"]
+      "skills": [
+        "./skills/grill-me",
+        "./skills/research",
+        "./skills/teach"
+      ]
     }
   ]
 }
