@@ -110,7 +110,7 @@ Don't create `GLOSSARY.md`, `docs/adr/`, or `docs/work/` now. The skills that ne
 
 ## 5. Done
 
-Tell the user setup is complete and which commands and skills now read these files: `/new-feature`, `/fix-bug`, `/new-app`, and `implement`. Say they can edit `docs/agents/*.md` by hand, and only need to re-run this skill to switch trackers or check for drift.
+Tell the user setup is complete and which commands and skills now read these files: `/new-feature`, `/fix-bug`, `/new-app`, `/revamp-page`, and `implement`. Say they can edit `docs/agents/*.md` by hand, and only need to re-run this skill to switch trackers or check for drift.
 
 ---
 

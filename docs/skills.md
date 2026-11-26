@@ -13,21 +13,24 @@ Skills do one job each. [Commands](../README.md#commands) chain them into workfl
 
 ## Which command uses which skill
 
-| Skill | `/new-feature` | `/fix-bug` | `/new-app` |
-| --- | :-: | :-: | :-: |
-| `setup-airman` | | | ● |
-| `grilling` | ● | | ● |
-| `domain-modeling` | ● | | ● |
-| `to-spec` | ● | | ● |
-| `to-tickets` | ● | | ● |
-| `wayfinder` | | | ● |
-| `prototype` | | | ● |
-| `research` | | | ● |
-| `diagnosing-bugs` | | ● | |
-| `tdd` | ● | ● | |
-| `code-review` | ● | ● | |
+| Skill | `/new-feature` | `/fix-bug` | `/new-app` | `/revamp-page` |
+| --- | :-: | :-: | :-: | :-: |
+| `setup-airman` | | | ● | |
+| `grilling` | ● | | ● | ● |
+| `domain-modeling` | ● | | ● | |
+| `to-spec` | ● | | ● | ● |
+| `to-tickets` | ● | | ● | ● |
+| `wayfinder` | | | ● | |
+| `prototype` | | | ● | ● |
+| `research` | | | ● | |
+| `diagnosing-bugs` | | ● | | |
+| `tdd` | ● | ● | | ● |
+| `code-review` | ● | ● | | ● |
+| `ui-ux-pro-max` | | | | ● |
+| `shadcn` | | | | ● |
+| `no-use-effect` | | | | ● |
 
-After `/new-feature` or `/new-app` writes tickets, the `implement` skill builds them.
+After `/new-feature`, `/new-app`, or `/revamp-page` writes tickets, the `implement` skill builds them.
 
 ---
 
@@ -45,7 +48,7 @@ Configures one repo: tracker, glossary and decisions, and verify commands. It wr
 
 Interviews you in rounds until you share an understanding of a plan. Each round asks every question that is answerable now, each with a recommended answer. It looks up facts itself and leaves the decisions to you.
 
-**Use when** you want a plan stress-tested · **Used by** `/new-feature`, `/new-app` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)
+**Use when** you want a plan stress-tested · **Used by** `/new-feature`, `/new-app`, `/revamp-page` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)
 
 ### grill-me
 
@@ -57,13 +60,13 @@ A shortcut you type to start `grilling` yourself.
 
 Turns the conversation so far into a spec, with no new interview: problem, solution, user stories, and the seams where it will be tested. It publishes the spec to the tracker.
 
-**Output** `docs/work/<slug>/spec.md` · **Used by** `/new-feature`, `/new-app` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-spec)
+**Output** `docs/work/<slug>/spec.md` · **Used by** `/new-feature`, `/new-app`, `/revamp-page` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-spec)
 
 ### to-tickets
 
 Splits a spec into thin vertical slices. Each one cuts through every layer end to end, and each declares which tickets block it.
 
-**Output** `docs/work/<slug>/issues/NN-*.md` · **Used by** `/new-feature`, `/new-app` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-tickets)
+**Output** `docs/work/<slug>/issues/NN-*.md` · **Used by** `/new-feature`, `/new-app`, `/revamp-page` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-tickets)
 
 ### wayfinder
 
@@ -81,7 +84,7 @@ Sharpens the project's language while you design. It challenges terms against th
 
 Builds throwaway code that answers one design question. That's either a logic demo for "does this state model feel right?" or switchable UI variants for "what should this look like?". Only the decision survives, and the code stays on a throwaway branch.
 
-**Use when** an experiment can settle a choice faster than talking · **Used by** `/new-app` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype)
+**Use when** an experiment can settle a choice faster than talking · **Used by** `/new-app`, `/revamp-page` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype)
 
 ### research
 
@@ -95,13 +98,13 @@ Investigates a question against primary sources such as official docs, source co
 
 Builds a spec ticket by ticket from the frontier. It claims each ticket, builds it test-first, checks its acceptance criteria, closes it, and commits, then runs the full checks and a review in a fresh context. Frontier tickets can go to parallel subagents when the tool has them.
 
-**Use when** `/new-feature` or `/new-app` has written tickets · **Run** `/implement docs/work/<slug>` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/implement), adapted
+**Use when** `/new-feature`, `/new-app`, or `/revamp-page` has written tickets · **Run** `/implement docs/work/<slug>` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/implement), adapted
 
 ### tdd
 
 Test-first development in vertical slices: one failing test, then only the code to pass it, at seams agreed with you up front. Refactoring belongs to the review.
 
-**Used by** `/new-feature`, `/fix-bug`, `implement` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd)
+**Used by** `/new-feature`, `/fix-bug`, `/revamp-page`, `implement` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd)
 
 ### diagnosing-bugs
 
@@ -119,7 +122,7 @@ Answers a read-only question about the code, such as "how does X work?" or "why 
 
 Reviews a diff in a fresh context along two axes in parallel. **Standards** asks whether it follows the repo's rules. **Spec** asks whether it does what the spec or ticket asked.
 
-**Used by** `/new-feature`, `/fix-bug`, `implement` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review)
+**Used by** `/new-feature`, `/fix-bug`, `/revamp-page`, `implement` · **Source** [Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review)
 
 > [!NOTE]
 > In Claude Code, this skill replaces the bundled `/code-review` once installed. The bundled `/review` alias still runs Claude Code's own review.
@@ -170,16 +173,16 @@ Teaches a topic over several sessions, with a mission, lessons, references, and 
 
 Adds, searches, fixes, styles, and composes shadcn/ui components and registries.
 
-**Use when** working in a shadcn/ui project
+**Use when** working in a shadcn/ui project · **Used by** `/revamp-page`
 
 ### ui-ux-pro-max
 
 A searchable design database of styles, palettes, font pairings, UX guidelines, and chart types across major stacks, used to plan and review interfaces.
 
-**Use when** designing or reviewing UI
+**Use when** designing or reviewing UI · **Used by** `/revamp-page`
 
 ### no-use-effect
 
 Enforces a no-direct-`useEffect` rule in React. It suggests derived state, event handlers, `useMemo`, `useSyncExternalStore`, data-fetching libraries, or key-based resets instead.
 
-**Use when** writing React or React Native · **Background** [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)
+**Use when** writing React or React Native · **Used by** `/revamp-page` · **Background** [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)

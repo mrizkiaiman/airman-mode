@@ -6,7 +6,8 @@
       "skills": [
         "./skills/commands/fix-bug",
         "./skills/commands/new-app",
-        "./skills/commands/new-feature"
+        "./skills/commands/new-feature",
+        "./skills/commands/revamp-page"
       ]
     },
     {

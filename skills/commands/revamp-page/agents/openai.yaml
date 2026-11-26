@@ -1,0 +1,5 @@
+interface:
+  display_name: "Revamp Page"
+  short_description: "Redesign a page without losing behavior"
+policy:
+  allow_implicit_invocation: false

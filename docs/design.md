@@ -24,6 +24,7 @@ This page records why Airman Mode is shaped the way it is, what was left out on 
 | **Input** | Read from the message, never `$ARGUMENTS` | Only some tools fill in placeholders |
 | **Composition** | Commands call skills, not other commands | Each command stays short and its context stays small |
 | **`/new-feature`** | It sizes the work first. Small work gets built, large work stops at tickets | Small changes don't need a spec, and large ones deserve a human check before any code |
+| **`/revamp-page`** | It writes a behavior inventory and characterization tests before any redesign, and needs before and after screenshots, asking you for them when the tool can't take them | A revamp's main risk is behavior that disappears without anyone noticing, and a screen nobody looked at proves nothing |
 | **Git** | Branch off `main`, commit small verified units, commit a failing test before its fix, and never push without being asked | The history proves the work, and you stay in control of what leaves your machine |
 | **Review** | A fresh context, ideally on a different model | The agent that wrote the code is the worst judge of it |
 | **Handoff** | Printed in the chat, pasted as the first message of the next session | No file to hunt for, and no switching context |
@@ -56,7 +57,9 @@ These are good ideas that wait for a real need.
    - [x] `wayfinder`, `prototype`, `retro`, and the new `investigate`
    - [x] A `commands` group in `skills.sh.json` and `marketplace.json`
    - [x] Remove the planned markers from the docs
-4. **Field test**
+4. **Frontend**
+   - [x] `/revamp-page`, with `prototype`, `ui-ux-pro-max`, `shadcn`, and `no-use-effect` wired in
+5. **Field test**
    - [ ] Run each command once in a real repo, and record what differed per tool in its guide
    - [ ] Mark the tool guides as tested
 

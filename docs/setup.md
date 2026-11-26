@@ -152,6 +152,7 @@ A command that **needs** a file stops and asks you to run `/setup-airman` if the
 | `/new-feature` | Needs (large path) | Uses | Needs (small path) |
 | `/fix-bug` | — | Uses | Needs |
 | `/new-app` | Needs | Uses | Creates or updates |
+| `/revamp-page` | Needs (large path) | Uses | Needs |
 | `implement` skill | Needs | Uses | Needs |
 
 ## Source

@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Treat the text after `/new-feature` as the feature request. If it is empty, ask what to build and stop.
 
-This command is for new features only. If the request is to fix something that is broken, suggest `/fix-bug` instead.
+This command is for new features only. If the request is to fix something that is broken, suggest `/fix-bug` instead. If it is to redesign an existing page without new behavior, suggest `/revamp-page`.
 
 ## Before you start
 

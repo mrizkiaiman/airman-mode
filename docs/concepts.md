@@ -15,11 +15,14 @@ flowchart LR
     idea([Idea]) --> newapp["/new-app"]
     idea --> feature["/new-feature"]
     bug([Bug]) --> fixbug["/fix-bug"]
+    page([Dated page]) --> revamp["/revamp-page"]
     newapp --> tickets[("docs/work/<br/>spec + tickets")]
     feature -- large --> tickets
     feature -- small --> done([Verified commits])
     tickets --> implement["implement skill"]
     implement --> done
+    revamp -- large --> tickets
+    revamp -- small --> done
     fixbug --> done
 ```
 
@@ -30,7 +33,7 @@ Airman Mode has two kinds of `SKILL.md`. Both live in this repo and both install
 | | Command | Skill |
 | --- | --- | --- |
 | **Job** | Runs a whole workflow by calling skills in a fixed order | Does one thing well |
-| **Examples** | `/new-feature`, `/fix-bug`, `/new-app` | `tdd`, `to-spec`, `implement` |
+| **Examples** | `/new-feature`, `/fix-bug`, `/new-app`, `/revamp-page` | `tdd`, `to-spec`, `implement` |
 | **Who starts it** | You, by typing its name | You, a command, or the agent |
 | **Calls** | Skills only, never another command | Sometimes other skills |
 | **Lives in** | `skills/commands/<name>/` | `skills/<name>/` |
@@ -54,9 +57,9 @@ Commands need to know a few things about each repo. `/setup-airman` writes them 
 
 | File | Answers | Used by |
 | --- | --- | --- |
-| `issue-tracker.md` | Where do specs and tickets live, and how do I create and read them? | `/new-feature`, `/new-app`, `implement`, `to-spec`, `to-tickets` |
+| `issue-tracker.md` | Where do specs and tickets live, and how do I create and read them? | `/new-feature`, `/new-app`, `/revamp-page`, `implement`, `to-spec`, `to-tickets` |
 | `glossary-and-decisions.md` | Where are the glossary and ADRs, and how should I use them? | Every command that explores code |
-| `verify.md` | How do I test, typecheck, lint, and run this app? | `/fix-bug`, `/new-feature`, `implement` |
+| `verify.md` | How do I test, typecheck, lint, and run this app? | `/fix-bug`, `/new-feature`, `/revamp-page`, `implement` |
 
 It also adds a three-line block to `AGENTS.md` that points to these files. `AGENTS.md` is loaded in every session, so it stays short: pointers only, no rules. See [Repo setup](setup.md).
 

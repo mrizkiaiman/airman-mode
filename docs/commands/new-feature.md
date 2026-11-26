@@ -13,6 +13,7 @@ Builds a brand-new feature. It first decides whether the work is **small** or **
 | A new capability: "let users export invoices as CSV" | Something broken: [`/fix-bug`](fix-bug.md) |
 | A new screen, endpoint, or command | A whole new app: [`/new-app`](new-app.md) |
 | A feature you can describe in a few sentences | Tickets that already exist: the [`implement`](../skills.md#implement) skill |
+| | A new look for an existing page: [`/revamp-page`](revamp-page.md) |
 
 ## Usage
 

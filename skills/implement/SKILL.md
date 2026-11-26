@@ -1,6 +1,6 @@
 ---
 name: implement
-description: Build a spec or a set of tickets ticket by ticket from the frontier, verify each ticket before the next, then run the full checks and a fresh-context review. Use after /new-feature or /new-app has written tickets, or when the user asks to implement a spec or ticket.
+description: Build a spec or a set of tickets ticket by ticket from the frontier, verify each ticket before the next, then run the full checks and a fresh-context review. Use after /new-feature, /new-app, or /revamp-page has written tickets, or when the user asks to implement a spec or ticket.
 disable-model-invocation: true
 ---
 
